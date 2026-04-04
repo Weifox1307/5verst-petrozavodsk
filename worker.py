@@ -6,7 +6,7 @@ from datetime import timedelta, timezone
 NRMS_USER = os.getenv("NRMS_USERNAME")
 NRMS_PASS = os.getenv("NRMS_PASSWORD")
 SHEET_URL = os.getenv("SHEET_CSV_URL")
-EVENT_ID = 10061  # Для Кстово замени на 10079
+EVENT_ID = 10028  # Для Кстово замени на 10079
 
 def get_moscow_now():
     """Возвращает текущее время в Москве (UTC+3)"""
