@@ -17,8 +17,8 @@ except ValueError as e:
     print(f"Ошибка парсинга ID: {e}")
     sys.exit(1)
 
-LAT = 56.2874
-LON = 43.9160
+LAT = 61.7868
+LON = 34.3678
 
 def get_weather():
     url = f"https://api.open-meteo.com/v1/forecast?latitude={LAT}&longitude={LON}&hourly=temperature_2m,precipitation_probability,weathercode&timezone=Europe%2FMoscow&forecast_days=1"
@@ -41,7 +41,7 @@ def get_weather():
             f"🌡 Температура: {temp}°C\n"
             f"☁ На улице: {status}\n"
             f"☔ Вероятность осадков: {prob}%\n\n"
-            f"Одевайтесь по погоде и до встречи в парке Станкозавода! 🧡"
+            f"Одевайтесь по погоде и до встречи в парке Ямка! 🧡"
         )
     except Exception as e:
         print(f"Ошибка получения погоды: {e}")
